@@ -81,7 +81,7 @@ test_words_tfidf_matrix = tfidf.transform(test_words_binary_matrix)
 save_matrix(df_test, test_words_tfidf_matrix, test_output)
 
 
-df = pd.DataFrame({"x_vals":[0,1,2,3,4], "y_vals":[0,1,2,3,4]})
+df = pd.DataFrame({"x_vals":[0,1,3,3,4], "y_vals":[0,1,2,3,4]})
 f, ax1 = plt.subplots()
 sns.scatterplot(data=df, x="x_vals", y="y_vals", ax=ax1)
 plt.savefig('/Users/blacar/Documents/ds_projects/dvc_test/data/test_fig.png')
